@@ -14,7 +14,7 @@ ENV PATH="$CATALINA_HOME/bin:$PATH"
 
 # Xóa webapps mặc định và copy WAR
 RUN rm -rf /usr/local/tomcat/webapps/*
-COPY EmailList.war /usr/local/tomcat/webapps/ROOT.war
+COPY ch04_ex1_survey_sol.war /usr/local/tomcat/webapps/ROOT.war
 
 # Render cần PORT env
 ENV PORT=10000
